@@ -1,0 +1,12 @@
+# ignore venvs
+
+cdn/cdn_venv/
+main_venv/
+
+# scripts
+dircreate.py
+
+*.po
+
+
+cdn/out/
