@@ -1,0 +1,9 @@
+User-agent: *
+Crawl-delay: 1
+Disallow: /explore/
+Disallow: /internalapi/
+Disallow: /projects/embed/
+Disallow: /cloudmonitor/
+Disallow: /varserver/
+Disallow: /tags/
+Disallow: /site-api/

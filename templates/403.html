@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<link href="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1398775869__//css/pages/http-errors.css" rel="stylesheet">
+{% endblock %}
+
+{% block main_content %}
+<!-- templates/403.html block main-content -->
+<div class="box" id="page-404">
+    <div class="box-head">
+        <h2>403. Oh noes! Our server is Scratch'ing its head</h2>
+    </div>
+    <div class="box-content">
+        <p>We couldn't authorize you to view this page. If you need to get in touch 
+            <br>with us about this, send us an email at <a href="mailto:help@scratch.mit.edu">help@scratch.mit.edu</a>.</p>
+        <p></p>
+        <br>
+        <img src="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1398775869__//images/sad404_cat.png" style="opacity:0.5;filter:alpha(opacity=50);margin:20px;padding: 10px;-webkit-border-radius: 200px; -moz-border-radius: 200px; border-radius: 200px;border: 12px solid #CCC;">
+    </div>
+</div>
+<!-- end block main-content -->
+{% endblock %}

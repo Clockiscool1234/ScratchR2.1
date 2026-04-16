@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<!-- templates/homepage/index.html block css -->
+    <link href="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1394063608__//css/pages/homepage.css" rel="stylesheet"> 
+<!-- end block css -->
+{% endblock %}
+
+{% block main_content %}
+<!-- templates/homepage/index.html block main-content -->
+<div class="homepage-banner clearfix">
+	<div class="cols clearfix">
+		<div class="intro col-10">
+			<h1 class="title">
+				Create stories, games, and animations<br />
+				Share with others around the world
+			</h1> 
+			<a id="orange-char" class="char" href="/projects/editor/?tip_bar=getStarted"> 
+				<img class="img-a" src="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1394063608__//images/cat-a.png"> 
+				<img class="img-b" src="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1394063608__//images/cat-b.png">
+				<div class="circle"></div>
+				<div class="text">TRY IT OUT</div>
+			</a> 
+			<a id="blue-char" class="char" href="/starter_projects"> 
+				<img class="img-a" src="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1394063608__//images/tera-a.png"> 
+				<img class="img-b" src="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1394063608__//images/tera-b.png">
+				<div class="circle"></div>
+				<div class="text">SEE EXAMPLES</div>
+			</a> 
+			<a id="yellow-char" data-control="registration" class="char" href="#"> 
+				<img class="img-a" src="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1394063608__//images/gobo-a.png"> 
+				<img class="img-b" src="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1394063608__//images/gobo-b.png">
+				<div class="circle"></div>
+				<div class="text">JOIN SCRATCH</div>
+				<div class="text subtext">( it's free )</div>
+			</a>
+			<div class="subtext">A creative learning community with 
+				<span class="projcount">4,916,025</span> projects shared
+			</div>
+			<div class="links"> 
+				<a href="/about">ABOUT SCRATCH</a> 
+				<a href="/educators">FOR EDUCATORS</a> 
+				<a class="last" href="/parents">FOR PARENTS</a> 
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="video">
+				<div class="play-button"></div> <img src="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1394063608__//images/hp-video-screenshot.png" />
+			</div>
+		</div>
+	</div>
+</div>
+<a name="community_featured_projects" style="display: block; height: 60px; margin-top:-60px"></a>
+{% with title="Featured Projects", type="project", id="featured", items=data.featured %}
+	{% include 'carousel/carousel.html' with context %}
+{% endwith %}
+<a name="community_featured_studios" style="display: block; height: 60px; margin-top:-60px"></a>
+{% with title="Featured Studios", type="gallery", id="featured", items=data.featuredGallery %}
+	{% include 'carousel/carousel.html' %}
+{% endwith %}
+<a name="curator_top_projects" style="display: block; height: 60px; margin-top:-60px"></a>
+{% with title="Projects Curated by PLACEHOLDER", type="project", id="featured", items=data.curated %}
+	{% include 'carousel/carousel.html' %}
+{% endwith %}
+<a name="scratch_design_studio" style="display: block; height: 60px; margin-top:-60px"></a>
+{% with title="Scratch Design Studio - 'PLACEHOLDER'", type="project", id="featured", items=data.sds %}
+	{% include 'carousel/carousel.html' %}
+{% endwith %}
+<a name="community_most_remixed_projects" style="display: block; height: 60px; margin-top:-60px"></a>
+{% with title="What the Community is Remixing", type="project", id="remixes", items=data.remixing %}
+	{% include 'carousel/carousel.html' %}
+{% endwith %}
+<a name="community_most_loved_projects" style="display: block; height: 60px; margin-top:-60px"></a>
+{% with title="What the Community is Loving", type="project", id="loves", items=data.loving %}
+	{% include 'carousel/carousel.html' %}
+{% endwith %}
+{% endblock %}
+
+{% block modals %}
+<div class="modal hide fade" id="modal-video" style="display: none;">
+  <a href="#" data-dismiss="" class="close">x</a>
+  <iframe id="vimeo-vid" src="" width="570" height="357" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ruffle-polyfilled=""></iframe>
+</div>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="//{{ env_var('CDN_ADDR') }}/scratchr2/static/__1394063608__//js/homepage.js"></script>
+{% endblock %}

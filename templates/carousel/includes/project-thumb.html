@@ -1,0 +1,20 @@
+<!-- templates/carousel/project-thumb.html -->
+<li class="project thumb item">
+    <a href="/projects/18280380/">
+        <img src="//{{ env_var('CDN_ADDR') }}/get_image/project/{{ item.projId }}_144x108.png?v=1394065110.03" width="144" height="108" class="image" />
+    </a>
+    <span class="title">
+        <a href="/projects/{{ item.projId }}/">{{ item.proj }}</a>
+    </span>
+    <span class="owner"> 
+        by
+        <a href="{{ item.userUrl }}">{{ item.user }}</a>
+    </span>
+    {% if item.stats %}
+    <span class="stats">
+        <span class="icon-xs black {{ item.stats.type }}"></span>
+        {{ item.stats.count }}
+    </span>
+    {% endif %}
+</li>
+<!-- end templates/carousel/project-thumb.html -->

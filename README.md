@@ -2,23 +2,33 @@
 WIP recreation of ScratchR2 using Flask
 
 ## Currenty implemented
-- [ ] Base page
-- [ ] Home page
-- [ ] Home page (logged in)
+- [x] Base page
+- [x] Home page
 - [ ] Project page
-- [ ] Project page (logged in)
 - [ ] Users page
-- [ ] Users page (logged in)
 - [ ] Gallery page
-- [ ] Gallery page (logged in)
+- [ ] Forums page
+- [ ] Download page
+- [ ] Search page
+- [ ] Commenting
+
+## Currenty implemented when logged in
+- [ ] Home page
+- [ ] Project page
+- [ ] Users page
+- [ ] Gallery page
 - [ ] Admin page
 - [ ] Mystuff page
 - [ ] Notifications page
 - [ ] Account settings page
 - [ ] Admin page
 - [ ] Forums page
-- [ ] Download page
-- [ ] Search page
+- [ ] Commenting
+
+## Editor functions
+- [ ] Media assets
+- [ ] Project creation
+- [ ] ...
 
 ## Setting up
 WIP

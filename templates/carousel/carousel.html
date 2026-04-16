@@ -1,0 +1,21 @@
+<!-- templates/carousel/carousel.html -->
+<div class="box slider-carousel-container prevent-select">
+    <div class="box-head">
+        {% if link %}
+        <a style="float:right;" href="{{ link.url }}">{{ link.text }}</a>
+        {% endif %}
+        <h4>{{ title }}</h4>
+    </div>
+    <div class="box-content slider-carousel horizontal" id="{{ id }}">
+        <div class="viewport">
+            <ul class="scroll-content"> 
+                {% for i in items %}
+                    {% with item = i %}
+                        {% include "carousel/includes/" ~ type ~ "-thumb.html" with context %}
+                    {% endwith %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end templates/carousel/carousel.html  -->

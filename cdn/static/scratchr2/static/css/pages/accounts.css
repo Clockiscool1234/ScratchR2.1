@@ -1,0 +1,107 @@
+.tabs-content {
+  min-height: 400px;
+  padding: 10px 20px 0 20px;
+}
+.tabs-content form {
+  padding-bottom:10px;
+}
+.tabs-content .field-wrapper {
+ margin-bottom: 10px;
+}
+.tabs-content label {
+  font-weight:700;
+}
+.tabs-content input {
+  margin-bottom: 0px;
+}
+.tabs-content button {
+  margin: 20px 0 0 0;
+}
+.tabs-content .reset-password button {
+  margin-top: 10px;
+}
+
+.tabs-content .separator {
+  margin-bottom: 10px;
+}
+
+.tabs-content p {
+  margin-top:10px;
+}
+.tabs-content .input-message {
+  height:20px;
+}
+.v-tabs {
+  margin-top: 50px;
+}
+
+.tabs-content  ul.errorlist {
+  list-style-type: none;
+  color: #b94a48;
+  margin: 0px;
+}
+
+body.password-reset .col-4 {
+  display:none;
+}
+
+body.password-reset .col-12 {
+  width:940px;
+}
+
+.beta-opt-in .field-wrapper input{
+  float: left;
+  margin-right: 10px;
+}
+
+.contact .messages p {
+    padding: 25px 10px;
+    margin: 15px 0;
+    border: 1px solid #CCC;
+    font-size: 1.4em;
+}
+.contact .messages .success {
+    background-color: #66FF99;
+    border: 1px solid green;
+}
+.contact .messages .error {
+    border: 1px solid #900;
+    background-color: #EF686D;
+}
+.contact h3 {
+  margin-top:20px;
+}
+.contact li {
+    margin: 0;
+}
+.contact #block-message {
+  background-color: #eee;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.contact #block-message p {
+    margin: 0;
+}
+.contact #block-notifications .alert-info {
+    padding-top: 15px;
+}
+.contact .errorlist {
+    margin: 0;
+    list-style: none;
+}
+.contact .errorlist li {
+    color: #900;
+}
+.contact input[name="email"] {
+  width:25;
+}
+.contact input[name="subject"] {
+  width:50%;
+}
+.contact textarea[name="message"] {
+  width:50%;
+  height:100px;
+}
+.contact .submit button {
+  margin-top: 0;
+}

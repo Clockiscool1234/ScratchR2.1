@@ -1,0 +1,15 @@
+<!-- templates/carousel/gallery-thumb.html -->
+<li class="gallery thumb item">
+    <a href="/studios/{{ item.galleryId }}/" class="image">
+        <span class="image">
+            <img src="//{{ env_var('CDN_ADDR') }}/get_image/gallery/{{ item.galleryId }}_170x100.png?v=1377617403.09" width="170" height="100" />
+        </span>
+        <span class="stats">
+            <span class="icon-sm studio white"></span>
+        </span>
+    </a>
+    <span class="title">
+        <a href="/studios/{{ item.gallId }}/">{{ item.gallery }}</a>
+    </span>
+</li>
+<!-- end templates/carousel/gallery-thumb.html -->

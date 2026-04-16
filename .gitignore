@@ -1,12 +1,8 @@
-# ignore venvs
-
-cdn/cdn_venv/
 main_venv/
-
-# scripts
 dircreate.py
+cdn/download_cdn.py
+references/
+cdn/allold/
+__pycache__/
+*~
 
-*.po
-
-
-cdn/out/
